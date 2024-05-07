@@ -9,8 +9,11 @@ builder.Services.AddSwaggerGen();
 
 // Add controllers functionality
 builder.Services.AddControllers();
+
+// TODO
 // Dependency injection for AnimalsRepository
 builder.Services.AddScoped<IAnimalsRepository, AnimalsRepository>();
+
 
 var app = builder.Build();
 
